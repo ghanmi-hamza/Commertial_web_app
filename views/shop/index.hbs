@@ -1,0 +1,22 @@
+{{# each porducts}}
+  <div class="row">
+    {{# each this}}
+        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src={{ this.imagePath }} alt="...">
+          <div class="caption">
+            <h3>{{ this.title }}</h3>
+            <p>{{ this.description }}</p>
+            <div class="clearfix">
+              <div class="price float-left">
+                {{ this.price }}$
+              </div>
+              <a href="#" class="btn btn-success float-right" role="button">View</a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    {{/each}}
+  </div>
+{{/each}}
+

@@ -1,0 +1,58 @@
+.thumbnail{
+	text-align: center;
+	border: 2px solid #DDD;
+	margin:15px 0px;
+	padding: 5px 20px;
+}
+
+.thumbnail .price{
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid #DDD;
+	padding: 8px;
+}
+
+
+/*Start footer*/
+
+.fun{
+	width: 100%;
+	color: white;
+	background: #2ecc71;
+	font-size: 20px;
+}
+.gif{
+	max-width: 100%;
+}
+.footer{
+	background-color: #191e21;
+}
+.footer h3{
+	color: white;
+	margin: 0px;
+	line-height: 50px;
+	font-size: 18px;
+}
+.footer .social_media{
+	padding:20px;
+}
+.footer .social_media i{
+	padding: 8px;
+	width: 35px;
+	height: 35px;
+	line-height: 18px;
+	color: #FFF;
+	border-radius:50%;
+}
+.footer  .fa-facebook{
+	background-color: #3b5998;
+}
+.footer .fa-twitter{
+	background-color: #55acee;
+}
+.footer .fa-google-plus{
+	background-color: #dc4e41;
+}
+
+
+/*End footer*/

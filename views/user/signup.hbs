@@ -1,0 +1,99 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">
+        <i class="fas fa-user-plus"></i> Register
+      </h1>
+      {{# if hasErrors}}
+        <div class="alert alert-danger">
+          {{# each messages}}
+            <p>{{this}}</p>
+          {{/each}}
+        </div>
+      {{/if}}
+      <p class="text-center">
+        +++All fields marked with an asterisk (*) are Required+++
+      </p>
+      <form action="/user/signup" method="post">
+      
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input
+            type="name"
+            id="firstName"
+            name="firstName"
+            class="form-control"
+            placeholder="Enter Your First Name"
+            
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input
+            type="name"
+            id="lastName"
+            name="lastName"
+            class="form-control"
+            placeholder="Enter Your Last Name"
+            
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+           
+          />
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password *</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password *</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            
+          />
+        </div>
+
+       <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            class="form-control"
+            placeholder="Enter Your Phone Number"
+            
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          Sign Up
+        </button>
+      </form>
+      
+      <p class="lead mt-4">Have An Account? <a href="/user/signin">Login</a></p>
+    </div>
+  </div>
+</div>
